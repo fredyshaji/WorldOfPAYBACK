@@ -9,7 +9,7 @@ import Foundation
 
 struct TransactionResponse: Decodable {
 
-    let list: [Item]
+    let items: [Item]
 
     struct Item: Decodable {
         let partnerDisplayName: String
@@ -66,7 +66,7 @@ struct TransactionResponse: Decodable {
     }
 
     init(item: [Item]) {
-      self.list = item
+      self.items = item
     }
 
 }

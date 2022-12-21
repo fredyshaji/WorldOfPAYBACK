@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class TransactionsListVM: ObservableObject {
+class TransactionsListVM: ObservableObject {
 
     @Published var transactionList: [TransactionResponse.Item] = []
     @Published private(set) var isRefreshing = false
@@ -23,7 +23,7 @@ final class TransactionsListVM: ObservableObject {
     func fetchTransactions() {
         loader.loadTransactions(fromJSON: fileName)
             .map { response in
-                response.list.map(TransactionResponse.Item.init)
+                response.items.map(TransactionResponse.Item.init)
             }
             .sink { [weak self] res in
                 print(res)
