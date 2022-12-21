@@ -12,6 +12,7 @@ class TransactionsListVM: ObservableObject {
 
     var transactionList: [TransactionResponse.Item] = []
     @Published var transactionModelList: [TransactionsRowViewModel] = []
+    @Published var categories: [String] = []
     @Published private(set) var isRefreshing = false
     let loader = TransactionLoader()
     let fileName = "PBTransactions.json"
@@ -52,5 +53,13 @@ class TransactionsListVM: ObservableObject {
         transactionModelList = transactionList.map { transaction in
             TransactionsRowViewModel(item: transaction)
         }
+        findCategories()
+    }
+
+    func findCategories() {
+        var categoryArray = transactionList.map { "\($0.category)" }
+        categoryArray = Array(Set(categoryArray)).sorted()
+        categoryArray.insert("All", at: 0)
+        categories = categoryArray
     }
 }

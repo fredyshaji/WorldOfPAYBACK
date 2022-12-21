@@ -11,12 +11,14 @@ struct TransactionsListView: View {
 
     @Binding var text: String
     @StateObject var viewModel = TransactionsListVM()
+    @State var selected: String =  "All"
     var transactionList: [TransactionsRowViewModel]
 
     var body: some View {
         NavigationView {
             VStack {
                 TopBarView()
+                FilterView(selectedItem: $selected, items: viewModel.categories)
                 
                 TextField("Search...", text: $text)
                     .padding(7)
@@ -27,7 +29,7 @@ struct TransactionsListView: View {
                 ZStack {
                     Color(.secondarySystemBackground)
                     
-                    List(viewModel.transactionModelList) { transaction in
+                    List(viewModel.transactionModelList.filter { $0.category == selected || selected == "All" }) { transaction in
                         NavigationLink {
                             TransactionDetailView(transaction: transaction)
                         } label: {

@@ -34,6 +34,10 @@ struct TransactionsRowViewModel: Identifiable {
     var currency: String {
         return item.transactionDetail.value.currency
     }
+
+    var category: String {
+        return "\(item.category)"
+    }
     
     init(item: TransactionResponse.Item) {
         self.item = item
