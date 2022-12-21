@@ -16,7 +16,7 @@ struct TransactionsRowViewModel: Identifiable {
     }
     
     var bookingDate: String {
-        return ISO8601DateFormatter().date(from: item.transactionDetail.bookingDate)?.ISO8601Format() ?? ""
+        return ISO8601DateFormatter().date(from: item.transactionDetail.bookingDate)?.formatted() ?? ""
     }
     
     var partnerDisplayName: String {
