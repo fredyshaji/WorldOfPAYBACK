@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct WorldOfPAYBACKAppApp: App {
+struct WorldOfPAYBACKApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TransactionsListView(text: .constant(""), transactionList: testDataList)
         }
     }
 }
