@@ -27,7 +27,7 @@ struct TransactionsListView: View {
                 ZStack {
                     Color(.secondarySystemBackground)
                     
-                    List(transactionList) { transaction in
+                    List(viewModel.transactionModelList) { transaction in
                         NavigationLink {
                             TransactionDetailView(transaction: transaction)
                         } label: {
