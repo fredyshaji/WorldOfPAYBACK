@@ -19,9 +19,12 @@ class TransactionsListVM: ObservableObject {
     private var bag = Set<AnyCancellable>()
     
     init() {
-         fetchTransactions()
-            .sink() { self.mapResponse() }
-            .store(in: &self.bag)
+        isRefreshing = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0) { [self] in
+            self.fetchTransactions()
+               .sink() { self.mapResponse() }
+               .store(in: &self.bag)
+        }
     }
 
     func fetchTransactions() -> Future <Void, Never> {
@@ -53,6 +56,8 @@ class TransactionsListVM: ObservableObject {
         transactionModelList = transactionList.map { transaction in
             TransactionsRowViewModel(item: transaction)
         }
+        transactionModelList
+            .sort { $0.bookingDate > $1.bookingDate }
         findCategories()
     }
 
@@ -61,5 +66,11 @@ class TransactionsListVM: ObservableObject {
         categoryArray = Array(Set(categoryArray)).sorted()
         categoryArray.insert("All", at: 0)
         categories = categoryArray
+    }
+
+    func findTotal(for category: String) -> String {
+        let amountArray = transactionModelList.filter { $0.category == category || category == "All" }
+        let total = amountArray.map({Int($0.amount) ?? 0}).reduce(0, +)
+        return String(total)
     }
 }

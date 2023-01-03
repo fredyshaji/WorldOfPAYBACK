@@ -13,7 +13,7 @@ struct FilterItemView: View {
     var body: some View {
         VStack(spacing: 0.0) {
             Text(filterCategory)
-                .font(.system(size: 12.0))
+                .font(.system(size: 18.0))
                 .foregroundColor(selectedFilter ? .black : .gray)
                 .padding(.horizontal, 16)
             if selectedFilter {

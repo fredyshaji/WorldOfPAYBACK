@@ -14,6 +14,7 @@
 		DA008CFF293BA1510027D538 /* WorldOfPAYBACKAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA008CFE293BA1510027D538 /* WorldOfPAYBACKAppTests.swift */; };
 		DA008D09293BA1510027D538 /* WorldOfPAYBACKAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA008D08293BA1510027D538 /* WorldOfPAYBACKAppUITests.swift */; };
 		DA008D0B293BA1510027D538 /* WorldOfPAYBACKAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA008D0A293BA1510027D538 /* WorldOfPAYBACKAppUITestsLaunchTests.swift */; };
+		DA0AD5E52964857B0085AA5C /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AD5E42964857B0085AA5C /* TotalView.swift */; };
 		DA4284FD29536A31005FEE76 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4284FC29536A31005FEE76 /* TransactionDetailView.swift */; };
 		DA42850029536DF9005FEE76 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4284FF29536DF9005FEE76 /* TopBarView.swift */; };
 		DA428502295378DE005FEE76 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA428501295378DE005FEE76 /* Extensions.swift */; };
@@ -24,6 +25,7 @@
 		DA4769C5294792FA009D7A88 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = DA4769C4294792FA009D7A88 /* PBTransactions.json */; };
 		DA4769C9294793B2009D7A88 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4769C8294793B2009D7A88 /* Responses.swift */; };
 		DA4769D029479C44009D7A88 /* TransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4769CF29479C44009D7A88 /* TransactionLoader.swift */; };
+		DAB1936929631D4400F0F4F1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1936829631D4400F0F4F1 /* NetworkMonitor.swift */; };
 		DABE75C8294DE65100532E04 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE75C7294DE65100532E04 /* TransactionsListView.swift */; };
 		DABE75CA294DE67D00532E04 /* TransactionsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE75C9294DE67D00532E04 /* TransactionsListVM.swift */; };
 		DABE75CE294FC32C00532E04 /* TransactionsRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE75CD294FC32C00532E04 /* TransactionsRowViewModel.swift */; };
@@ -58,6 +60,7 @@
 		DA008D04293BA1510027D538 /* WorldOfPAYBACKAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA008D08293BA1510027D538 /* WorldOfPAYBACKAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKAppUITests.swift; sourceTree = "<group>"; };
 		DA008D0A293BA1510027D538 /* WorldOfPAYBACKAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA0AD5E42964857B0085AA5C /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
 		DA4284FC29536A31005FEE76 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		DA4284FF29536DF9005FEE76 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		DA428501295378DE005FEE76 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		DA4769C4294792FA009D7A88 /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
 		DA4769C8294793B2009D7A88 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		DA4769CF29479C44009D7A88 /* TransactionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionLoader.swift; sourceTree = "<group>"; };
+		DAB1936829631D4400F0F4F1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		DABE75C7294DE65100532E04 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
 		DABE75C9294DE67D00532E04 /* TransactionsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListVM.swift; sourceTree = "<group>"; };
 		DABE75CD294FC32C00532E04 /* TransactionsRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRowViewModel.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				DABE75CF294FC5BB00532E04 /* TransactionRow.swift */,
 				DA4285082953A4C5005FEE76 /* FilterView.swift */,
 				DA42850A2953A727005FEE76 /* FilterItemView.swift */,
+				DA0AD5E42964857B0085AA5C /* TotalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				DA4769C229479250009D7A88 /* TransactionError.swift */,
 				DA4769C8294793B2009D7A88 /* Responses.swift */,
 				DA4769CF29479C44009D7A88 /* TransactionLoader.swift */,
+				DAB1936829631D4400F0F4F1 /* NetworkMonitor.swift */,
 			);
 			path = TransactionAPI;
 			sourceTree = "<group>";
@@ -349,11 +355,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4285092953A4C5005FEE76 /* FilterView.swift in Sources */,
+				DAB1936929631D4400F0F4F1 /* NetworkMonitor.swift in Sources */,
 				DA4769C9294793B2009D7A88 /* Responses.swift in Sources */,
 				DA4284FD29536A31005FEE76 /* TransactionDetailView.swift in Sources */,
 				DABE75C8294DE65100532E04 /* TransactionsListView.swift in Sources */,
 				DA008CF0293BA1500027D538 /* ContentView.swift in Sources */,
 				DABE75CA294DE67D00532E04 /* TransactionsListVM.swift in Sources */,
+				DA0AD5E52964857B0085AA5C /* TotalView.swift in Sources */,
 				DA4769C329479250009D7A88 /* TransactionError.swift in Sources */,
 				DABE75D0294FC5BB00532E04 /* TransactionRow.swift in Sources */,
 				DA4769C1294791BF009D7A88 /* Parsing.swift in Sources */,

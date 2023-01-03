@@ -18,7 +18,10 @@ class TransactionLoader {
     let filename = "PBTransactions.json"
 
     func loadTransactions(fromJSON filename: String) -> AnyPublisher<TransactionResponse, TransactionError> {
-        return load(filename)
+        Bool.random()
+        ? Fail(error: .network(description: "Failed to fetch"))
+            .eraseToAnyPublisher()
+        : load(filename)
     }
 
     func load<T: Decodable>(_ filename: String) -> AnyPublisher<T, TransactionError> {
