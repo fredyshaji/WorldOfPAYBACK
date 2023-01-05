@@ -61,6 +61,7 @@
 		DA008D08293BA1510027D538 /* WorldOfPAYBACKAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKAppUITests.swift; sourceTree = "<group>"; };
 		DA008D0A293BA1510027D538 /* WorldOfPAYBACKAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA0AD5E42964857B0085AA5C /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		DA0AD5E62967307B0085AA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA4284FC29536A31005FEE76 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		DA4284FF29536DF9005FEE76 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		DA428501295378DE005FEE76 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		DA008CEC293BA1500027D538 /* WorldOfPAYBACKApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA0AD5E62967307B0085AA5C /* Info.plist */,
 				DA008CED293BA1500027D538 /* WorldOfPAYBACKApp.swift */,
 				DA008CEF293BA1500027D538 /* ContentView.swift */,
 				DA4769C62947937D009D7A88 /* TransactionList */,
@@ -532,6 +534,7 @@
 				DEVELOPMENT_TEAM = 5S3VT2JW8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldOfPAYBACKApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -561,6 +564,7 @@
 				DEVELOPMENT_TEAM = 5S3VT2JW8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorldOfPAYBACKApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
